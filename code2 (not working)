@@ -1,0 +1,15 @@
+async function main(ns) {
+let target = "n00dles";
+let MonesyTresh = getServerMaxMoney(target) * 0.75;
+let securityTresh = getServerMinSecurityLevel(target);
+nuke(target)
+while(true) {
+  if (getServerSecurityLevel(target) > securityTresh) {
+  weaken(target);
+} else if (getServerMoneyAvailable(target) < MoneyTresh) {
+  grow(target);
+} else {
+  hack(target);
+    }
+  }
+}
